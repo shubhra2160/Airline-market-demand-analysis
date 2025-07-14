@@ -1,0 +1,59 @@
+/* Additional styles for the Airline Booking Market Demand Analyzer */
+
+.dashboard-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+}
+
+.metric-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.chart-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #666;
+}
+
+.insight-priority-high {
+    border-left-color: #dc3545;
+}
+
+.insight-priority-medium {
+    border-left-color: #ffc107;
+}
+
+.insight-priority-low {
+    border-left-color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .stat-value {
+        font-size: 1.8rem;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 1.5rem;
+    }
+} 
